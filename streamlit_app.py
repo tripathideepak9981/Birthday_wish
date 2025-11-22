@@ -154,9 +154,22 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+            
+    .top-title {
+       font-family: 'Great Vibes', cursive !important;
+       font-size: 90px !important;
+       line-height: 1.0;
+       color: #ffffff;
+       text-shadow: 4px 4px 12px rgba(0,0,0,0.25);
+}
+
 
 </style>
 """, unsafe_allow_html=True)
+
+
+
+
 
 # ---------------------------------------
 # HEADER SECTION
@@ -175,11 +188,12 @@ with col1:
 
 with col2:
     st.markdown("""
-        <div style="text-align: center; margin-top: 30px;">
-            <h1 style="font-size: 75px; margin-bottom: -10px;">Happy Birthday</h1>
-            <h1 style="font-size: 75px;">My cutiee pai ❤️</h1>
+        <div style="text-align: center; margin-top: 10px;">
+            <div class="top-title">Happy Birthday</div>
+            <div class="top-title" style="margin-top:-10px;">My cutiee pai ❤️</div>
         </div>
     """, unsafe_allow_html=True)
+
 
 with col3:
     st.write("")  # padding
@@ -317,3 +331,4 @@ with col_centered[1]:
             </div>
         </div>
         """, unsafe_allow_html=True)
+
