@@ -10,7 +10,7 @@ import time
 # PAGE CONFIGURATION
 # ---------------------------------------
 st.set_page_config(
-    page_title="Happy Birthday Swati!",
+    page_title="Happy Birthday My cutiee pai ❤️ ",
     page_icon="👑",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -161,16 +161,31 @@ st.markdown("""
 # ---------------------------------------
 # HEADER SECTION
 # ---------------------------------------
-col1, col2 = st.columns([1, 3])
+# ---------------------------------------
+# HEADER SECTION (FIXED PERFECT ALIGNMENT)
+# ---------------------------------------
+col1, col2, col3 = st.columns([1, 3, 1])
 
 with col1:
+    st.write("")  # padding
     if lottie_birthday:
-        st_lottie(lottie_birthday, height=120, key="animation_top")
+        st_lottie(lottie_birthday, height=140, key="animation_top", speed=1)
     else:
         st.write("🎉")
 
 with col2:
-    st.markdown("<h1>Happy Birthday Swati!</h1>", unsafe_allow_html=True)
+    st.markdown("""
+        <div style="text-align: center; margin-top: 30px;">
+            <h1 style="font-size: 75px; margin-bottom: -10px;">Happy Birthday</h1>
+            <h1 style="font-size: 75px;">My cutiee pai ❤️</h1>
+        </div>
+    """, unsafe_allow_html=True)
+
+with col3:
+    st.write("")  # padding
+    st.markdown('<div style="margin-top: 40px; font-size: 90px;">💖</div>', unsafe_allow_html=True)
+
+
 
 st.markdown("""
 <div class="glass-card">
